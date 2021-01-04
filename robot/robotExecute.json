@@ -1,0 +1,47 @@
+{
+    "apiVersion": "opentestfactory.org/v1alpha1",
+    "kind": "Workflow",
+    "metadata": {
+        "name": "Robot Execute"
+    },
+    "defaults": {
+        "runs-on": "ssh"
+    },
+    "jobs": {
+        "thisIsASuccess": {
+            "runs-on": "ssh",
+            "steps": [
+            {
+                "uses": "action/checkout@v1",
+                "with": {
+                    "repository": "https://github.com/SquashTF-workshop/robotDemoXML"
+                }
+            },
+            {
+                "uses": "robotframework/execute@v1",
+                "with": {
+                    "test": "robotDemoXML/demo-xml.robot#Execute Basic Tests"
+                }
+            }
+            ]
+        },
+        "thisIsAFailure": {
+            "runs-on": "ssh",
+            "needs": "thisIsASuccess",
+            "steps": [
+            {
+                "uses": "action/checkout@v1",
+                "with": {
+                    "repository": "https://github.com/SquashTF-workshop/robotTFParamCheck"
+                }
+            },
+            {
+                "uses": "robotframework/execute@v1",
+                "with": {
+                    "test": "robotTFParamCheck/robot_community.robot#Check Default Param Failure"
+                }
+            }
+            ]
+        }
+    }
+}

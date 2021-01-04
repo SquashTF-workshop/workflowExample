@@ -1,0 +1,73 @@
+{
+    "apiVersion": "opentestfactory.org/v1alpha1",
+    "kind": "Workflow",
+    "metadata": {
+        "name": "Robot With Params"
+    },
+    "defaults": {
+        "runs-on": "ssh"
+    },
+    "jobs": {
+        "testParamFailure": {
+            "runs-on": "ssh",
+            "steps": [
+            {
+              "uses": "action/checkout@v1",
+              "with": {
+                  "repository": "https://github.com/SquashTF-workshop/robotTFParamCheck"
+              }
+            },
+            {
+              "uses": "robotframework/params@v1",
+              "with": {
+                  "data": {
+                      "test": {
+                          "DSNAME":"data"
+                      }
+                  },
+                  "path":"paramfile",
+                  "format":"tm.squashtest.org/params@v1"
+              }
+            },
+            {
+              "uses": "robotframework/robot@v1",
+              "with": {
+                  "datasource": "robotTFParamCheck/robot_community.robot"
+              }
+            }
+            ]
+        },
+        "testParamSuccess": {
+            "runs-on": "ssh",
+            "needs": "testParamFailure",
+            "steps": [
+            {
+              "uses": "action/checkout@v1",
+              "with": {
+                  "repository": "https://github.com/SquashTF-workshop/robotTFParamCheck"
+              }
+            },
+            {
+              "uses": "robotframework/params@v1",
+              "with": {
+                  "data": {
+                      "test": {
+                          "DSNAME":"dataset1",
+                          "TC_CUF_testcase":"testcaseValue",
+                          "DS_FIRST_PARAM":"value1"
+                      }
+                  },
+                  "path":"paramfile",
+                  "format":"tm.squashtest.org/params@v1"
+              }
+            },
+            {
+              "uses": "robotframework/robot@v1",
+              "with": {
+                  "datasource": "robotTFParamCheck/robot_community.robot"
+              }
+            }
+            ]
+        }    
+    }            
+}

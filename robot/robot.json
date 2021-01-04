@@ -1,0 +1,47 @@
+{
+    "apiVersion": "opentestfactory.org/v1alpha1",
+    "kind": "Workflow",
+    "metadata": {
+        "name": "Robot"
+    },
+    "defaults": {
+        "runs-on": "ssh"
+    },
+    "jobs": {
+        "thisIsASuccess": {
+            "runs-on": "ssh",
+            "steps": [
+            {
+              "uses": "action/checkout@v1",
+              "with": {
+                  "repository": "https://github.com/SquashTF-workshop/robotDemoXML"
+              }
+            },
+            {
+              "uses": "robotframework/robot@v1",
+              "with": {
+                  "datasource": "robotDemoXML/demo-xml.robot"
+              }
+            }
+            ]
+        },
+        "thisIsAFailure": {
+            "runs-on": "ssh",
+            "needs": "thisIsASuccess",
+            "steps": [
+            {
+              "uses": "action/checkout@v1",
+              "with": {
+                  "repository": "https://github.com/SquashTF-workshop/robotTFParamCheck"
+              }
+            },
+            {
+              "uses": "robotframework/robot@v1",
+              "with": {
+                  "datasource": "robotTFParamCheck/robot_community.robot"
+              }
+            }
+            ]
+        }    
+    }            
+}
