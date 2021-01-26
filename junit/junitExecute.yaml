@@ -1,0 +1,17 @@
+---
+apiVersion: opentestfactory.org/v1alpha1
+kind: Workflow
+metadata:
+  name: JUnit
+defaults:
+  runs-on: junit
+jobs:
+  thisIsASuccess:
+    runs-on: junit
+    steps:
+      - uses: action/checkout@v2
+        with:
+          repository: https://github.com/SquashTF-workshop/junitCalc
+      - uses: junit/execute@v1
+        with:
+          test: junitCalc/squash.tfauto.CalculatorTest#addSuccess
