@@ -1,0 +1,37 @@
+---
+  apiVersion: opentestfactory.org/v1alpha1
+  kind: Workflow
+  metadata:
+    name: Cypress
+  defaults:
+    runs-on: cypress
+  variables:
+    CYPRESS_CACHE_FOLDER: /root/.cache/Cypress
+    TERM: xterm
+
+  jobs:
+    executeWithChrome:
+      runs-on: cypress
+      steps:
+          - uses: action/checkout@v2
+            with:
+              repository: https://github.com/SquashTF-workshop/cypressDocCheck
+          - uses: cypress/cypress@v1
+            with:
+              browser: chrome
+              reporter: junit
+              headless: true
+            working-directory: cypressDocCheck
+
+    executeWithFirefox:
+      runs-on: cypress
+      steps:
+          - uses: action/checkout@v2
+            with:
+              repository: https://github.com/SquashTF-workshop/cypressDocCheck
+          - uses: cypress/cypress@v1
+            with:
+              browser: firefox
+              reporter: junit
+              headless: true
+            working-directory: cypressDocCheck

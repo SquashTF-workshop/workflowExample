@@ -1,0 +1,82 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Cypress"
+  },
+  "defaults": {
+    "runs-on": "cypress"
+  },
+  "variables": {
+    "CYPRESS_CACHE_FOLDER": "/root/.cache/Cypress",
+    "TERM": "xterm"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "cypress",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/cypressParamCalcSingleSpec"
+          }
+        },
+        {
+          "uses": "cypress/params@v1",
+          "with": {
+            "data": {
+              "global": {
+                "CPG_CUF_add_result": "17",
+                "DS_reverse_result1": "8 "
+              },
+              "test": {
+                "DS_reverse_result2": "4",
+                "TC_CUF_sub_result": "99"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "cypress/execute@v1",
+          "with": {
+            "test": "cypressParamCalcSingleSpec/cypress/integration/subFolder/reverse.calculator.dsvalue.spec.js"
+          }
+        }
+      ]
+    },
+    "thisIsAFailure": {
+      "runs-on": "cypress",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/cypressParamCalcSingleSpec"
+          }
+        },
+        {
+          "uses": "cypress/params@v1",
+          "with": {
+            "data": {
+              "global": {
+                "CPG_CUF_add_result": "17",
+                "DS_reverse_result1": "8 "
+              },
+              "test": {
+                "DS_reverse_result2": "4",
+                "TC_CUF_sub_result": "99"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "cypress/execute@v1",
+          "with": {
+            "test": "cypressParamCalcSingleSpec/cypress/integration/calculator.tc.sub.spec.js"
+          }
+        }
+      ]
+    }
+  }
+}

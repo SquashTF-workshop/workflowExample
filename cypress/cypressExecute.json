@@ -1,0 +1,50 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Cypress"
+  },
+  "defaults": {
+    "runs-on": "cypress"
+  },
+  "variables": {
+    "CYPRESS_CACHE_FOLDER": "/root/.cache/Cypress",
+    "TERM": "xterm"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "cypress",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/cypressCalcSingleSpec"
+          }
+        },
+        {
+          "uses": "cypress/execute@v1",
+          "with": {
+            "test": "cypressCalcSingleSpec/cypress/integration/calculator.add.ok.spec.js"
+          }
+        }
+      ]
+    },
+    "thisIsAFailure": {
+      "runs-on": "cypress",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/cypressCalcSingleSpec"
+          }
+        },
+        {
+          "uses": "cypress/execute@v1",
+          "with": {
+            "test": "cypressCalcSingleSpec/cypress/integration/calculator.mult.ko.spec.js"
+          }
+        }
+      ]
+    }
+  }
+}
