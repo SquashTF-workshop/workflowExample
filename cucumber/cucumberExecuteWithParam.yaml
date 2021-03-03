@@ -1,0 +1,27 @@
+
+apiVersion: opentestfactory.org/v1alpha1
+kind: Workflow
+metadata:
+  name: Cucumber
+
+defaults:
+  runs-on: cucumber
+
+jobs:
+  thisIsATestFailure:
+    runs-on: cucumber
+    steps:
+
+      - uses: action/checkout@v2
+        with:
+          repository: https://github.com/SquashTF-workshop/cucumberStockManagement
+      - uses: cucumber/execute@v1
+        with:
+          data:
+            global:
+            test:
+              DSNAME: SecondScenario
+          format: tm.squashtest.org/params@v1
+      - uses: cucumber/execute@v1
+        with:
+          test: cucumberStockManagement/src/test/resources/concombre/TagInheritance.feature
