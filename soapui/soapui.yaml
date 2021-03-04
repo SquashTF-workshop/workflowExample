@@ -1,0 +1,36 @@
+  apiVersion: opentestfactory.org/v1alpha1
+  kind: Workflow
+  metadata:
+    name: SoapUI
+
+  defaults:
+    runs-on: soapui
+
+  jobs:
+    thisIsASuccess:
+      runs-on: soapui
+      steps:
+
+        - uses: action/checkout@v2
+          with:
+            repository: https://github.com/SquashTF-workshop/soapuiOpenWeather
+
+        - uses: soapui/soapui@v1
+          with:
+            project: soapuiOpenWeather/OpenWeatherTest-soapui-project.xml
+            testsuite: UVAndAirPoll
+            testcase: AirPollSuccess
+
+    thisIsAFailure:
+      runs-on: soapui
+      steps:
+
+        - uses: action/checkout@v2
+          with:
+            repository: https://github.com/SquashTF-workshop/soapuiOpenWeather
+
+        - uses: soapui/soapui@v1
+          with:
+            project: soapuiOpenWeather/OpenWeatherTest-soapui-project.xml
+            testsuite: ForecastSuite
+            testcase: MunchenForecastAssertError
