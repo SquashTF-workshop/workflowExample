@@ -1,0 +1,13 @@
+node {
+   stage 'Stage 1 : sanity check'
+   echo 'OK pipelines work in the test instance'
+   stage 'Stage 2 : steps check'
+   configFileProvider([configFile(fileId: 'squashfile',targetLocation: 'testWorkflow.json')]) {
+        def workflow_id = runSquashWorkflow(
+        workflowPathName:'testWorkflow.json',
+        workflowTimeout: '2000S',
+        serverName:'defaultServer'
+        )
+        echo "We just ran The Squash Orchestrator workflow $workflow_id"
+   }
+}
