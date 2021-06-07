@@ -1,0 +1,278 @@
+@Everything @Feature
+Feature: Stock Management To Check Duplicate Execution
+
+  Background:                       [90m# concombre/DuplicateTags.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @Scenario @FeatureChild @FirstScenario
+  Scenario: Current stock duplicate         [90m# concombre/DuplicateTags.feature:9[0m
+    [32mWhen [0m[32mI count everything I have in stock[0m [90m# AnnotationSteps.i_count_everything_i_have_in_stock()[0m
+    [32mThen [0m[32mI've at least [0m[32m[1m5[0m[32m products in stock[0m  [90m# AnnotationSteps.i_ve_at_least_number_products_in_stock(int)[0m
+
+  Background:                       [90m# concombre/DuplicateTags.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @Scenario @FeatureChild @SecondScenario
+  Scenario: Error in stock duplicate        [90m# concombre/DuplicateTags.feature:14[0m
+    [32mWhen [0m[32mI count everything I have in stock[0m [90m# AnnotationSteps.i_count_everything_i_have_in_stock()[0m
+    [31mThen [0m[31mI've at least [0m[31m[1m9[0m[31m products in stock[0m  [90m# AnnotationSteps.i_ve_at_least_number_products_in_stock(int)[0m
+      [31mjava.lang.AssertionError: There is not enough stock
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_ve_at_least_number_products_in_stock(AnnotationSteps.java:37)
+	at ✽.I've at least 9 products in stock(classpath:concombre/DuplicateTags.feature:16)
+[0m
+
+  @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products duplicate [90m# concombre/DuplicateTags.feature:19[0m
+    [36mGiven I need to add some <product>[0m
+    [36mAnd I know how much I have[0m
+    [36mWhen I add it to the stock[0m
+    [36mThen I should have more than the minimum needed[0m
+
+    Examples: 
+
+  Background:                       [90m# concombre/DuplicateTags.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products duplicate          [90m# concombre/DuplicateTags.feature:27[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Ladder"[0m               [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/DuplicateTags.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products duplicate          [90m# concombre/DuplicateTags.feature:28[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Chest"[0m                [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/DuplicateTags.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products duplicate          [90m# concombre/DuplicateTags.feature:29[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Table"[0m                [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [31mThen [0m[31mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+      [31mjava.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/DuplicateTags.feature:23)
+[0m
+
+@MainFct
+Feature: Stock Management
+
+  Background:                       [90m# concombre/Main.feature:5[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario: Current stock main              [90m# concombre/Main.feature:10[0m
+    [32mWhen [0m[32mI count everything I have in stock[0m [90m# AnnotationSteps.i_count_everything_i_have_in_stock()[0m
+    [32mThen [0m[32mI've at least [0m[32m[1m2[0m[32m products in stock[0m  [90m# AnnotationSteps.i_ve_at_least_number_products_in_stock(int)[0m
+
+  Scenario Outline: New products main [90m# concombre/Main.feature:15[0m
+    [36mGiven I need to add some <product>[0m
+    [36mAnd I know how much I have[0m
+    [36mWhen I add it to the stock[0m
+    [36mThen I should have more than the minimum needed[0m
+
+    Examples: 
+
+  Background:                       [90m# concombre/Main.feature:5[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario Outline: New products main               [90m# concombre/Main.feature:23[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Ladder"[0m               [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/Main.feature:5[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario Outline: New products main               [90m# concombre/Main.feature:24[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Chest"[0m                [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/Main.feature:5[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario Outline: New products main               [90m# concombre/Main.feature:25[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Table"[0m                [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [31mThen [0m[31mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+      [31mjava.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/Main.feature:19)
+[0m
+
+Feature: Stock Management is OK
+
+  Background:                       [90m# concombre/Success.feature:3[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Success
+  Scenario: Stock success                   [90m# concombre/Success.feature:9[0m
+    [32mWhen [0m[32mI count everything I have in stock[0m [90m# AnnotationSteps.i_count_everything_i_have_in_stock()[0m
+    [32mThen [0m[32mI've at least [0m[32m[1m1[0m[32m products in stock[0m  [90m# AnnotationSteps.i_ve_at_least_number_products_in_stock(int)[0m
+
+@Everything @Feature
+Feature: Stock Management To Check Tag Inheritance
+
+  Background:                       [90m# concombre/TagInheritance.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @Scenario @FeatureChild @FirstScenario
+  Scenario: Current stock with tag inheritance [90m# concombre/TagInheritance.feature:9[0m
+    [32mWhen [0m[32mI count everything I have in stock[0m    [90m# AnnotationSteps.i_count_everything_i_have_in_stock()[0m
+    [32mThen [0m[32mI've at least [0m[32m[1m5[0m[32m products in stock[0m     [90m# AnnotationSteps.i_ve_at_least_number_products_in_stock(int)[0m
+
+  Background:                       [90m# concombre/TagInheritance.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @Scenario @FeatureChild @SecondScenario
+  Scenario: Error in stock with tag inheritance [90m# concombre/TagInheritance.feature:14[0m
+    [32mWhen [0m[32mI count everything I have in stock[0m     [90m# AnnotationSteps.i_count_everything_i_have_in_stock()[0m
+    [31mThen [0m[31mI've at least [0m[31m[1m9[0m[31m products in stock[0m      [90m# AnnotationSteps.i_ve_at_least_number_products_in_stock(int)[0m
+      [31mjava.lang.AssertionError: There is not enough stock
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_ve_at_least_number_products_in_stock(AnnotationSteps.java:37)
+	at ✽.I've at least 9 products in stock(classpath:concombre/TagInheritance.feature:16)
+[0m
+
+  @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products with tag inheritance [90m# concombre/TagInheritance.feature:19[0m
+    [36mGiven I need to add some <product>[0m
+    [36mAnd I know how much I have[0m
+    [36mWhen I add it to the stock[0m
+    [36mThen I should have more than the minimum needed[0m
+
+    Examples: 
+
+  Background:                       [90m# concombre/TagInheritance.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products with tag inheritance [90m# concombre/TagInheritance.feature:27[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Ladder"[0m                 [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                        [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                        [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m   [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/TagInheritance.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products with tag inheritance [90m# concombre/TagInheritance.feature:28[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Chest"[0m                  [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                        [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                        [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m   [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/TagInheritance.feature:4[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @Everything @Feature @Everything @ScenarioOutline @FeatureChild
+  Scenario Outline: New products with tag inheritance [90m# concombre/TagInheritance.feature:29[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Table"[0m                  [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                        [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                        [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [31mThen [0m[31mI should have more than the minimum needed[0m   [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+      [31mjava.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/TagInheritance.feature:23)
+[0m
+
+@MainFct
+Feature: Stock Management
+
+  Background:                       [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:9[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario: Current stock                   [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:14[0m
+    [32mWhen [0m[32mI count everything I have in stock[0m [90m# AnnotationSteps.i_count_everything_i_have_in_stock()[0m
+    [32mThen [0m[32mI've at least [0m[32m[1m2[0m[32m products in stock[0m  [90m# AnnotationSteps.i_ve_at_least_number_products_in_stock(int)[0m
+
+  Scenario Outline: New products [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:19[0m
+    [36mGiven I need to add some <product>[0m
+    [36mAnd I know how much I have[0m
+    [36mWhen I add it to the stock[0m
+    [36mThen I should have more than the minimum needed[0m
+
+    Examples: 
+
+  Background:                       [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:9[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario Outline: New products                    [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:27[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Ladder"[0m               [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:9[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario Outline: New products                    [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:28[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Chest"[0m                [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [32mThen [0m[32mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+
+  Background:                       [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:9[0m
+    [32mGiven [0m[32mI've [0m[32m[1m2[0m[32m products[0m           [90m# AnnotationSteps.i_ve_number_products(int)[0m
+    [32mAnd [0m[32mI add [0m[32m[1m3[0m[32m additional products[0m [90m# AnnotationSteps.i_had_number_additional_products(int)[0m
+
+  @MainFct
+  Scenario Outline: New products                    [90m# concombre/Test_Folder__a/240_tc-gherkin.feature:29[0m
+    [32mGiven [0m[32mI need to add some [0m[32m[1m"Table"[0m                [90m# AnnotationSteps.i_need_to_add_some_product(String)[0m
+    [32mAnd [0m[32mI know how much I have[0m                      [90m# AnnotationSteps.i_knom_how_much_i_have()[0m
+    [32mWhen [0m[32mI add it to the stock[0m                      [90m# AnnotationSteps.i_add_it_to_the_stock()[0m
+    [31mThen [0m[31mI should have more than the minimum needed[0m [90m# AnnotationSteps.i_should_have_more_than_the_minimum_needed()[0m
+      [31mjava.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/Test_Folder__a/240_tc-gherkin.feature:23)
+[0m

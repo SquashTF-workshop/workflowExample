@@ -1,0 +1,2204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="59.99s"
+		durationms="59991"
+		type="root"
+		rid="6de6b1c4ac60c90"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="1"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="tf-agent"
+		rxversion="9.5.0.0"
+		host="WINDOWS-AGENT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="fr-FR"
+		dtnlanguage="fr-FR"
+		screenresolution="1348x943"
+		timestamp="03/06/2021 15:49:01"
+		timestampiso="2021-06-03T13:49:01"
+		endtime="03/06/2021 15:50:01"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="45.48s"
+			durationms="45480"
+			type="test-suite"
+			rid="faba1c29edb490"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="1"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="1"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="FirefoxDocCheck"
+			headertext="FirefoxDocCheck"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+			</params>
+			<activity
+				result="Success"
+				duration="23.15s"
+				durationms="23152"
+				type="test-case"
+				rid="dc5cffe36e9824c"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="1"
+				totalfailedtestcasecount="0"
+				totalblockedtestcasecount="0"
+				childsuccesscount="5"
+				childfailedcount="0"
+				childblockedcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="FirefoxOK"
+				testcontainerid="fbf638d9-a80c-4951-85ff-da7a2d5790fc"
+				headertext="FirefoxOK"
+				displayName="FirefoxOK"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Success"
+					duration="1.43s"
+					durationms="1428"
+					type="setup-container"
+					rid="16b4d52c338b90be"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="1"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="1.37s"
+						durationms="1368"
+						type="test-module"
+						rid="2bc8baf2a9906780"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="OpenFirefox"
+						displayName="OpenFirefox"
+						moduleid="81ddbad4-e0ea-4428-aa0d-bfdd3ea1bcea"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:00.218"
+							timeRelativeToTestModuleStartTime="00:00.031"
+							timeWallClock="15:49:15"
+							time="00:00.218"
+							level="Info"
+							category="Website">
+							<message>
+								Opening web site 'https://squash-tf.readthedocs.io/en/latest/' with browser 'Firefox' in normal mode.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\OpenFirefox.cs"
+								codeline="82"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Success"
+					duration="13.99s"
+					durationms="13989"
+					type="test-module"
+					rid="302dab7a259fd1a8"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="GoToJUnitRunnerDoc"
+					displayName="GoToJUnitRunnerDoc"
+					moduleid="e90c227a-7baa-49ec-9248-a0918b70d3cc"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.576"
+						timeRelativeToTestModuleStartTime="00:00.007"
+						timeWallClock="15:49:16"
+						time="00:01.576"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Welcome to Squash TF components documentation!') on item 'ApplicationUnderTest.WelcomeToSquashTFComponentsDocument'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.667"
+						timeRelativeToTestModuleStartTime="00:11.098"
+						timeWallClock="15:49:27"
+						time="00:12.667"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="83"
+							loglvl="Success"
+							itemindex="0">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.862"
+						timeRelativeToTestModuleStartTime="00:11.293"
+						timeWallClock="15:49:28"
+						time="00:12.862"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='h1') on item 'ApplicationUnderTest.WelcomeToSquashTFComponentsDocument'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.998"
+						timeRelativeToTestModuleStartTime="00:11.429"
+						timeWallClock="15:49:28"
+						time="00:12.998"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="87"
+							loglvl="Success"
+							itemindex="1">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.152"
+						timeRelativeToTestModuleStartTime="00:11.583"
+						timeWallClock="15:49:28"
+						time="00:13.152"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.SquashTFJavaJunitRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.308"
+						timeRelativeToTestModuleStartTime="00:11.739"
+						timeWallClock="15:49:28"
+						time="00:13.308"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Visible' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="91"
+							loglvl="Success"
+							itemindex="2">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.465"
+						timeRelativeToTestModuleStartTime="00:11.896"
+						timeWallClock="15:49:28"
+						time="00:13.465"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Squash TF Java Junit Runner') on item 'ApplicationUnderTest.SquashTFJavaJunitRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="94"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.617"
+						timeRelativeToTestModuleStartTime="00:12.048"
+						timeWallClock="15:49:28"
+						time="00:13.617"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="95"
+							loglvl="Success"
+							itemindex="3">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.782"
+						timeRelativeToTestModuleStartTime="00:12.213"
+						timeWallClock="15:49:29"
+						time="00:13.782"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='a') on item 'ApplicationUnderTest.SquashTFJavaJunitRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="98"
+							itemindex="4"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.916"
+						timeRelativeToTestModuleStartTime="00:12.347"
+						timeWallClock="15:49:29"
+						time="00:13.916"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="99"
+							loglvl="Success"
+							itemindex="4">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.089"
+						timeRelativeToTestModuleStartTime="00:12.520"
+						timeWallClock="15:49:29"
+						time="00:14.089"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Href='https://squash-tf.readthedocs.io/projects/runner-java-junit') on item 'ApplicationUnderTest.SquashTFJavaJunitRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="102"
+							itemindex="5"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.235"
+						timeRelativeToTestModuleStartTime="00:12.666"
+						timeWallClock="15:49:29"
+						time="00:14.235"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Href' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="103"
+							loglvl="Success"
+							itemindex="5">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.411"
+						timeRelativeToTestModuleStartTime="00:12.842"
+						timeWallClock="15:49:29"
+						time="00:14.411"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'ApplicationUnderTest.SquashTFJavaJunitRunner' at 71;7.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner"
+							id="5299b317524d44f389030e62b14f6d5b"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToJUnitRunnerDoc.cs"
+							codeline="106"
+							itemindex="6"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="5.09s"
+					durationms="5086"
+					type="test-module"
+					rid="10933293e77ee1f3"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="GoToTFParamDoc"
+					displayName="GoToTFParamDoc"
+					moduleid="f1189827-7d71-4aac-a0ae-0588dcd2ce22"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.567"
+						timeRelativeToTestModuleStartTime="00:00.004"
+						timeWallClock="15:49:30"
+						time="00:15.567"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Squash TF Java Junit Runner') on item 'ApplicationUnderTest.SquashTFJavaJunitRunner1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner1"
+							id="0fd2a8203ef74354b3fc1893d4a2319a"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:18.450"
+						timeRelativeToTestModuleStartTime="00:02.886"
+						timeWallClock="15:49:33"
+						time="00:18.450"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner1"
+							id="0fd2a8203ef74354b3fc1893d4a2319a"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="83"
+							loglvl="Success"
+							itemindex="0">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:18.634"
+						timeRelativeToTestModuleStartTime="00:03.070"
+						timeWallClock="15:49:33"
+						time="00:18.634"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='h1') on item 'ApplicationUnderTest.SquashTFJavaJunitRunner1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner1"
+							id="0fd2a8203ef74354b3fc1893d4a2319a"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:18.788"
+						timeRelativeToTestModuleStartTime="00:03.224"
+						timeWallClock="15:49:34"
+						time="00:18.788"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							itempath=".//div[#'squash-tf-java-junit-runner']/h1[@innertext>'Squash TF Java Junit Runn']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFJavaJunitRunner1"
+							id="0fd2a8203ef74354b3fc1893d4a2319a"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="87"
+							loglvl="Success"
+							itemindex="1">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:18.937"
+						timeRelativeToTestModuleStartTime="00:03.373"
+						timeWallClock="15:49:34"
+						time="00:18.937"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='TF Param Service') on item 'ApplicationUnderTest.TFParamService'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							itempath=".//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService"
+							id="1c7319fc8024482a95137422adaf776e"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.161"
+						timeRelativeToTestModuleStartTime="00:03.597"
+						timeWallClock="15:49:34"
+						time="00:19.161"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							itempath=".//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService"
+							id="1c7319fc8024482a95137422adaf776e"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="91"
+							loglvl="Success"
+							itemindex="2">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.334"
+						timeRelativeToTestModuleStartTime="00:03.770"
+						timeWallClock="15:49:34"
+						time="00:19.334"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='a') on item 'ApplicationUnderTest.TFParamService'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							itempath=".//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService"
+							id="1c7319fc8024482a95137422adaf776e"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="94"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.472"
+						timeRelativeToTestModuleStartTime="00:03.908"
+						timeWallClock="15:49:34"
+						time="00:19.472"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							itempath=".//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService"
+							id="1c7319fc8024482a95137422adaf776e"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="95"
+							loglvl="Success"
+							itemindex="3">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.622"
+						timeRelativeToTestModuleStartTime="00:04.058"
+						timeWallClock="15:49:34"
+						time="00:19.622"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Href='https://squash-tf.readthedocs.io/projects/runner-java-junit/en/doc-stable/tf-param-service.html') on item 'ApplicationUnderTest.TFParamService'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							itempath=".//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService"
+							id="1c7319fc8024482a95137422adaf776e"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="98"
+							itemindex="4"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.744"
+						timeRelativeToTestModuleStartTime="00:04.180"
+						timeWallClock="15:49:34"
+						time="00:19.744"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Href' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							itempath=".//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService"
+							id="1c7319fc8024482a95137422adaf776e"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="99"
+							loglvl="Success"
+							itemindex="4">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.903"
+						timeRelativeToTestModuleStartTime="00:04.339"
+						timeWallClock="15:49:35"
+						time="00:19.903"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'ApplicationUnderTest.TFParamService' at 132;16.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							itempath=".//nav//ul/li[5]/a[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService"
+							id="1c7319fc8024482a95137422adaf776e"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToTFParamDoc.cs"
+							codeline="102"
+							itemindex="5"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="2.56s"
+					durationms="2556"
+					type="test-module"
+					rid="1f3731e9c224d4"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="CheckTFParamDependency"
+					displayName="CheckTFParamDependency"
+					moduleid="66650ba8-ca3e-4f68-ba36-e3d276d29b8c"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:20.673"
+						timeRelativeToTestModuleStartTime="00:00.014"
+						timeWallClock="15:49:35"
+						time="00:20.673"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.TFParamService1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							itempath=".//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1"
+							id="6ad4492eddf34ca490cb37acecacb388"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.023"
+						timeRelativeToTestModuleStartTime="00:01.364"
+						timeWallClock="15:49:37"
+						time="00:22.023"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Visible' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							itempath=".//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1"
+							id="6ad4492eddf34ca490cb37acecacb388"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="83"
+							loglvl="Success"
+							itemindex="0">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.264"
+						timeRelativeToTestModuleStartTime="00:01.605"
+						timeWallClock="15:49:37"
+						time="00:22.264"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='TF Param Service') on item 'ApplicationUnderTest.TFParamService1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							itempath=".//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1"
+							id="6ad4492eddf34ca490cb37acecacb388"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.456"
+						timeRelativeToTestModuleStartTime="00:01.797"
+						timeWallClock="15:49:37"
+						time="00:22.456"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							itempath=".//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1"
+							id="6ad4492eddf34ca490cb37acecacb388"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="87"
+							loglvl="Success"
+							itemindex="1">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.629"
+						timeRelativeToTestModuleStartTime="00:01.969"
+						timeWallClock="15:49:37"
+						time="00:22.629"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='h1') on item 'ApplicationUnderTest.TFParamService1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							itempath=".//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1"
+							id="6ad4492eddf34ca490cb37acecacb388"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.753"
+						timeRelativeToTestModuleStartTime="00:02.094"
+						timeWallClock="15:49:37"
+						time="00:22.753"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							itempath=".//div[#'tf-param-service']/h1[@innertext='TF Param Service']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.TFParamService1"
+							id="6ad4492eddf34ca490cb37acecacb388"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="91"
+							loglvl="Success"
+							itemindex="2">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:22.903"
+						timeRelativeToTestModuleStartTime="00:02.244"
+						timeWallClock="15:49:38"
+						time="00:22.903"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='org.squashtest.ta.galaxiatf-param-service1.0.0-RELEASE') on item 'ApplicationUnderTest.OrgSquashtestTaGalaxiatfParamServic'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'configuration']/blockquote//pre[@innertext>'org.squashtest.ta.galaxia']"
+							itempath=".//div[#'configuration']/blockquote//pre[@innertext>'org.squashtest.ta.galaxia']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.OrgSquashtestTaGalaxiatfParamServic"
+							id="acbc143839b44d42b6f9a1a7f67a0b95"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="94"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:23.044"
+						timeRelativeToTestModuleStartTime="00:02.385"
+						timeWallClock="15:49:38"
+						time="00:23.044"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.OrgSquashtestTaGalaxiatfParamServic' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'configuration']/blockquote//pre[@innertext>'org.squashtest.ta.galaxia']"
+							itempath=".//div[#'configuration']/blockquote//pre[@innertext>'org.squashtest.ta.galaxia']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.OrgSquashtestTaGalaxiatfParamServic"
+							id="acbc143839b44d42b6f9a1a7f67a0b95"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckTFParamDependency.cs"
+							codeline="95"
+							loglvl="Success"
+							itemindex="3">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="71ms"
+					durationms="71"
+					type="teardown-container"
+					rid="100eea514b8337d8"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="1"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="69ms"
+						durationms="69"
+						type="test-module"
+						rid="c26985a050e6274"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="CloseFirefox"
+						displayName="CloseFirefox"
+						moduleid="d668e623-391e-4d06-9453-b83d31cc3b32"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:23.223"
+							timeRelativeToTestModuleStartTime="00:00.002"
+							timeWallClock="15:49:38"
+							time="00:23.223"
+							level="Info"
+							category="Application">
+							<message>
+								Closing application containing item 'ApplicationUnderTest'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='squash-tf.readthedocs.io']"
+								itempath="/dom[@domain='squash-tf.readthedocs.io']"
+								fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.Self"
+								id="844b3a0d409444e38e1c4fd5cb8555fd"
+								timeout="30000"
+								codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CloseFirefox.cs"
+								codeline="82"
+								itemindex="0"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+			</activity>
+			<activity
+				result="Failed"
+				duration="22.18s"
+				durationms="22180"
+				type="test-case"
+				rid="221bf32f762836ed"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="4"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="FirefoxKO"
+				testcontainerid="89c0b4f7-74c6-48e8-899a-4df8319801f0"
+				headertext="FirefoxKO"
+				displayName="FirefoxKO"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Success"
+					duration="600ms"
+					durationms="600"
+					type="setup-container"
+					rid="1659f259ccfe80d7"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="1"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="588ms"
+						durationms="588"
+						type="test-module"
+						rid="bd98e3aff89ec0"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="OpenFirefox"
+						displayName="OpenFirefox"
+						moduleid="81ddbad4-e0ea-4428-aa0d-bfdd3ea1bcea"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:23.300"
+							timeRelativeToTestModuleStartTime="00:00.002"
+							timeWallClock="15:49:38"
+							time="00:23.300"
+							level="Info"
+							category="Website">
+							<message>
+								Opening web site 'https://squash-tf.readthedocs.io/en/latest/' with browser 'Firefox' in normal mode.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\OpenFirefox.cs"
+								codeline="82"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Success"
+					duration="8.93s"
+					durationms="8934"
+					type="test-module"
+					rid="125e8c59fb3644ec"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="GoToCucumberDoc"
+					displayName="GoToCucumberDoc"
+					moduleid="23da7773-bde1-4908-90a6-df86085def8f"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:23.912"
+						timeRelativeToTestModuleStartTime="00:00.011"
+						timeWallClock="15:49:39"
+						time="00:23.912"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.WelcomeToSquashTFComponentsDocument'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.126"
+						timeRelativeToTestModuleStartTime="00:06.226"
+						timeWallClock="15:49:45"
+						time="00:30.126"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Visible' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="83"
+							loglvl="Success"
+							itemindex="0">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.291"
+						timeRelativeToTestModuleStartTime="00:06.391"
+						timeWallClock="15:49:45"
+						time="00:30.291"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Welcome to Squash TF components documentation!') on item 'ApplicationUnderTest.WelcomeToSquashTFComponentsDocument'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.388"
+						timeRelativeToTestModuleStartTime="00:06.487"
+						timeWallClock="15:49:45"
+						time="00:30.388"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="87"
+							loglvl="Success"
+							itemindex="1">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.555"
+						timeRelativeToTestModuleStartTime="00:06.654"
+						timeWallClock="15:49:45"
+						time="00:30.555"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='h1') on item 'ApplicationUnderTest.WelcomeToSquashTFComponentsDocument'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.670"
+						timeRelativeToTestModuleStartTime="00:06.769"
+						timeWallClock="15:49:45"
+						time="00:30.670"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							itempath=".//div[#'welcome-to-squash-tf-components-documentation']/h1[@innertext>'Welcome to Squash TF components']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.WelcomeToSquashTFComponentsDocument"
+							id="a797c8b64cd94ddb82a68b26b61538ca"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="91"
+							loglvl="Success"
+							itemindex="2">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:30.838"
+						timeRelativeToTestModuleStartTime="00:06.937"
+						timeWallClock="15:49:46"
+						time="00:30.838"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.SquashTFCucumberJavaRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="94"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.023"
+						timeRelativeToTestModuleStartTime="00:07.122"
+						timeWallClock="15:49:46"
+						time="00:31.023"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Visible' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="95"
+							loglvl="Success"
+							itemindex="3">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.180"
+						timeRelativeToTestModuleStartTime="00:07.280"
+						timeWallClock="15:49:46"
+						time="00:31.180"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Squash TF Cucumber Java Runner') on item 'ApplicationUnderTest.SquashTFCucumberJavaRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="98"
+							itemindex="4"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.300"
+						timeRelativeToTestModuleStartTime="00:07.400"
+						timeWallClock="15:49:46"
+						time="00:31.300"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="99"
+							loglvl="Success"
+							itemindex="4">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.460"
+						timeRelativeToTestModuleStartTime="00:07.560"
+						timeWallClock="15:49:46"
+						time="00:31.460"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='a') on item 'ApplicationUnderTest.SquashTFCucumberJavaRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="102"
+							itemindex="5"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.572"
+						timeRelativeToTestModuleStartTime="00:07.672"
+						timeWallClock="15:49:46"
+						time="00:31.572"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="103"
+							loglvl="Success"
+							itemindex="5">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.709"
+						timeRelativeToTestModuleStartTime="00:07.809"
+						timeWallClock="15:49:46"
+						time="00:31.709"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Href='https://squash-tf.readthedocs.io/projects/runner-cucumber-java') on item 'ApplicationUnderTest.SquashTFCucumberJavaRunner'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="106"
+							itemindex="6"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.826"
+						timeRelativeToTestModuleStartTime="00:07.926"
+						timeWallClock="15:49:47"
+						time="00:31.826"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Href' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="107"
+							loglvl="Success"
+							itemindex="6">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:31.993"
+						timeRelativeToTestModuleStartTime="00:08.093"
+						timeWallClock="15:49:47"
+						time="00:31.993"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'ApplicationUnderTest.SquashTFCucumberJavaRunner' at 124;9.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'runners']//a[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner"
+							id="10031dd4e5aa467198f9734f6426971c"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToCucumberDoc.cs"
+							codeline="110"
+							itemindex="7"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="5.93s"
+					durationms="5930"
+					type="test-module"
+					rid="6d901c1cd9ce445"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="GoToRunnerOptions"
+					displayName="GoToRunnerOptions"
+					moduleid="e501e845-fc5e-43fc-81a6-44b9c135f1fa"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:32.871"
+						timeRelativeToTestModuleStartTime="00:00.016"
+						timeWallClock="15:49:48"
+						time="00:32.871"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.SquashTFCucumberJavaRunner1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1"
+							id="5e9adc2222e34d57ab2b5928ab056efa"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:35.498"
+						timeRelativeToTestModuleStartTime="00:02.643"
+						timeWallClock="15:49:50"
+						time="00:35.498"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Visible' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1"
+							id="5e9adc2222e34d57ab2b5928ab056efa"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="83"
+							loglvl="Success"
+							itemindex="0">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:35.655"
+						timeRelativeToTestModuleStartTime="00:02.800"
+						timeWallClock="15:49:50"
+						time="00:35.655"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Squash TF Cucumber Java Runner') on item 'ApplicationUnderTest.SquashTFCucumberJavaRunner1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1"
+							id="5e9adc2222e34d57ab2b5928ab056efa"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:35.774"
+						timeRelativeToTestModuleStartTime="00:02.919"
+						timeWallClock="15:49:51"
+						time="00:35.774"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1"
+							id="5e9adc2222e34d57ab2b5928ab056efa"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="87"
+							loglvl="Success"
+							itemindex="1">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:35.920"
+						timeRelativeToTestModuleStartTime="00:03.065"
+						timeWallClock="15:49:51"
+						time="00:35.920"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='h1') on item 'ApplicationUnderTest.SquashTFCucumberJavaRunner1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1"
+							id="5e9adc2222e34d57ab2b5928ab056efa"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.087"
+						timeRelativeToTestModuleStartTime="00:03.232"
+						timeWallClock="15:49:51"
+						time="00:36.087"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							itempath=".//div[#'squash-tf-cucumber-java-runner']/h1[@innertext>'Squash TF Cucumber Java R']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.SquashTFCucumberJavaRunner1"
+							id="5e9adc2222e34d57ab2b5928ab056efa"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="91"
+							loglvl="Success"
+							itemindex="2">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.268"
+						timeRelativeToTestModuleStartTime="00:03.413"
+						timeWallClock="15:49:51"
+						time="00:36.268"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.RunnersOptionsPOM'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="94"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.548"
+						timeRelativeToTestModuleStartTime="00:03.693"
+						timeWallClock="15:49:51"
+						time="00:36.548"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Visible' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="95"
+							loglvl="Success"
+							itemindex="3">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.712"
+						timeRelativeToTestModuleStartTime="00:03.857"
+						timeWallClock="15:49:51"
+						time="00:36.712"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Runner’s options (POM)') on item 'ApplicationUnderTest.RunnersOptionsPOM'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="98"
+							itemindex="4"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:36.845"
+						timeRelativeToTestModuleStartTime="00:03.990"
+						timeWallClock="15:49:52"
+						time="00:36.845"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="99"
+							loglvl="Success"
+							itemindex="4">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:37.001"
+						timeRelativeToTestModuleStartTime="00:04.146"
+						timeWallClock="15:49:52"
+						time="00:37.001"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='a') on item 'ApplicationUnderTest.RunnersOptionsPOM'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="102"
+							itemindex="5"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:37.117"
+						timeRelativeToTestModuleStartTime="00:04.262"
+						timeWallClock="15:49:52"
+						time="00:37.117"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="103"
+							loglvl="Success"
+							itemindex="5">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:37.272"
+						timeRelativeToTestModuleStartTime="00:04.417"
+						timeWallClock="15:49:52"
+						time="00:37.272"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Href='https://squash-tf.readthedocs.io/projects/runner-cucumber-java/en/doc-stable/usage.html#runner-s-options-pom') on item 'ApplicationUnderTest.RunnersOptionsPOM'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="106"
+							itemindex="6"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:37.384"
+						timeRelativeToTestModuleStartTime="00:04.529"
+						timeWallClock="15:49:52"
+						time="00:37.384"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Href' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="107"
+							loglvl="Success"
+							itemindex="6">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:37.553"
+						timeRelativeToTestModuleStartTime="00:04.698"
+						timeWallClock="15:49:52"
+						time="00:37.553"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'ApplicationUnderTest.RunnersOptionsPOM' at 140;12.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							itempath=".//nav//ul/li[5]/a[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM"
+							id="d76c31d13e7644e5ab86393298d51af0"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\GoToRunnerOptions.cs"
+							codeline="110"
+							itemindex="7"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Failed"
+					duration="6.41s"
+					durationms="6409"
+					type="test-module"
+					rid="c975f43d11fe8bc"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="CheckMvnRepoLink"
+					displayName="CheckMvnRepoLink"
+					moduleid="8ee3067e-4026-41fb-9e1d-a76c47d74e42"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.HttpRepoSquashtestOrgMaven2Releas' does not match the specified value (actual='http://repo.squashtest.org/maven2/release/org/squashtest/ta/galaxia/squash-ta-cucumber/', expected='http://repo.squashtest.org/maven2/release/org/squashtest/ta/galaxia/squash-tf-cucumber/').
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:38.834"
+						timeRelativeToTestModuleStartTime="00:00.014"
+						timeWallClock="15:49:54"
+						time="00:38.834"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ApplicationUnderTest.RunnersOptionsPOM1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							itempath=".//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1"
+							id="6ce069f139a04d13b19ac1f4ef93f535"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:39.625"
+						timeRelativeToTestModuleStartTime="00:00.805"
+						timeWallClock="15:49:54"
+						time="00:39.625"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'Visible' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							itempath=".//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1"
+							id="6ce069f139a04d13b19ac1f4ef93f535"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="83"
+							loglvl="Success"
+							itemindex="0">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:39.911"
+						timeRelativeToTestModuleStartTime="00:01.091"
+						timeWallClock="15:49:55"
+						time="00:39.911"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (InnerText='Runner’s options (POM)') on item 'ApplicationUnderTest.RunnersOptionsPOM1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							itempath=".//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1"
+							id="6ce069f139a04d13b19ac1f4ef93f535"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:40.551"
+						timeRelativeToTestModuleStartTime="00:01.731"
+						timeWallClock="15:49:55"
+						time="00:40.551"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							itempath=".//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1"
+							id="6ce069f139a04d13b19ac1f4ef93f535"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="87"
+							loglvl="Success"
+							itemindex="1">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:40.731"
+						timeRelativeToTestModuleStartTime="00:01.911"
+						timeWallClock="15:49:55"
+						time="00:40.731"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (TagName='h1') on item 'ApplicationUnderTest.RunnersOptionsPOM1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							itempath=".//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1"
+							id="6ce069f139a04d13b19ac1f4ef93f535"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="90"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:40.893"
+						timeRelativeToTestModuleStartTime="00:02.073"
+						timeWallClock="15:49:56"
+						time="00:40.893"
+						level="Success"
+						category="Validation">
+						<message>
+							Attribute 'TagName' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							itempath=".//div[#'runner-s-options-pom']/h1[@innertext='Runner’s options (POM)']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.RunnersOptionsPOM1"
+							id="6ce069f139a04d13b19ac1f4ef93f535"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="91"
+							loglvl="Success"
+							itemindex="2">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:41.243"
+						timeRelativeToTestModuleStartTime="00:02.423"
+						timeWallClock="15:49:56"
+						time="00:41.243"
+						level="Info"
+						category="Validation"
+						errimg="images_FirefoxD_76f72e82\FirefoxD_76f72e82_b2c10c86_trace.jpg"
+						errthumb="images_FirefoxD_76f72e82\FirefoxD_76f72e82_b2c10c86_trace_thumb.jpg">
+						<message>
+							Validating AttributeEqual (InnerText='http://repo.squashtest.org/maven2/release/org/squashtest/ta/galaxia/squash-tf-cucumber/') on item 'ApplicationUnderTest.HttpRepoSquashtestOrgMaven2Releas'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-version']/?/?/a[@innertext>'http://repo.squashtest.or']"
+							itempath=".//div[#'runner-s-version']/?/?/a[@innertext>'http://repo.squashtest.or']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.HttpRepoSquashtestOrgMaven2Releas"
+							id="82dbada6f60645cf8971d42752c79ec1"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="94"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.435"
+						timeRelativeToTestModuleStartTime="00:05.615"
+						timeWallClock="15:49:59"
+						time="00:44.435"
+						level="Failure"
+						category="Validation"
+						errimg="images_FirefoxD_76f72e82\FirefoxD_76f72e82_24552c12_trace.jpg"
+						errthumb="images_FirefoxD_76f72e82\FirefoxD_76f72e82_24552c12_trace_thumb.jpg">
+						<message>
+							Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.HttpRepoSquashtestOrgMaven2Releas' does not match the specified value (actual='http://repo.squashtest.org/maven2/release/org/squashtest/ta/galaxia/squash-ta-cucumber/', expected='http://repo.squashtest.org/maven2/release/org/squashtest/ta/galaxia/squash-tf-cucumber/').
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-version']/?/?/a[@innertext>'http://repo.squashtest.or']"
+							itempath=".//div[#'runner-s-version']/?/?/a[@innertext>'http://repo.squashtest.or']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.HttpRepoSquashtestOrgMaven2Releas"
+							id="82dbada6f60645cf8971d42752c79ec1"
+							timeout="60000"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="95"
+							loglvl="Failure"
+							itemindex="3">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:44.615"
+						timeRelativeToTestModuleStartTime="00:05.795"
+						timeWallClock="15:49:59"
+						time="00:44.615"
+						level="Error"
+						category="Module"
+						errimg="images_FirefoxD_76f72e82\FirefoxD_76f72e82_aa7ee49e_trace.jpg"
+						errthumb="images_FirefoxD_76f72e82\FirefoxD_76f72e82_aa7ee49e_trace_thumb.jpg">
+						<message>
+							Module execution was aborted because a validation step has failed. Attribute 'InnerText' of element for item 'ranorexDocCheckCSharpRepository.ApplicationUnderTest.HttpRepoSquashtestOrgMaven2Releas' does not match the specified value (actual='http://repo.squashtest.org/maven2/release/org/squashtest/ta/galaxia/squash-ta-cucumber/', expected='http://repo.squashtest.org/maven2/release/org/squashtest/ta/galaxia/squash-tf-cucumber/').
+						</message>
+						<metainfo
+							stacktrace="   à Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   à Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   à Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   à Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   à Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   à Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   à ranorexDocCheckCSharp.Recordings.CheckMvnRepoLink.Ranorex.Core.Testing.ITestModule.Run() dans C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs:ligne 95
+   à Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CheckMvnRepoLink.cs"
+							codeline="95"
+							type="repoitem"
+							path="/dom[@domain='squash-tf.readthedocs.io']//div[#'runner-s-version']/?/?/a[@innertext>'http://repo.squashtest.or']"
+							itempath=".//div[#'runner-s-version']/?/?/a[@innertext>'http://repo.squashtest.or']"
+							fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.HttpRepoSquashtestOrgMaven2Releas"
+							id="82dbada6f60645cf8971d42752c79ec1"
+							timeout="60000"
+							loglvl="Error"
+							itemindex="3">
+						</metainfo>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="183ms"
+					durationms="183"
+					type="teardown-container"
+					rid="17da1beeef743f23"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="1"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="179ms"
+						durationms="179"
+						type="test-module"
+						rid="270a44b8414b82cc"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="CloseFirefox"
+						displayName="CloseFirefox"
+						moduleid="d668e623-391e-4d06-9453-b83d31cc3b32"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<varbindings>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:45.299"
+							timeRelativeToTestModuleStartTime="00:00.006"
+							timeWallClock="15:50:00"
+							time="00:45.299"
+							level="Info"
+							category="Application">
+							<message>
+								Closing application containing item 'ApplicationUnderTest'.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/dom[@domain='squash-tf.readthedocs.io']"
+								itempath="/dom[@domain='squash-tf.readthedocs.io']"
+								fullname="ranorexDocCheckCSharpRepository.ApplicationUnderTest.Self"
+								id="844b3a0d409444e38e1c4fd5cb8555fd"
+								timeout="30000"
+								codefile="C:\Users\kung\Documents\Ranorex\RanorexStudio Projects\ranorexDocCheck\ranorexDocCheckCSharp\Recordings\CloseFirefox.cs"
+								codeline="82"
+								itemindex="0"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

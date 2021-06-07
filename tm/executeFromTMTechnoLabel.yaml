@@ -1,0 +1,28 @@
+---
+
+apiVersion: opentestfactory.org/v1alpha1
+kind: Workflow
+metadata:
+  name: Simple Workflow
+defaults:
+  runs-on: ssh
+jobs:
+  explicitJob:
+    runs-on: ssh
+    generator: tm.squashtest.org/tm.generator@v1
+    with:
+      testPlanUuid: ea17b876-0aee-457c-bd73-2aad7c3f8d64
+      testPlanType: Iteration
+      squashTMUrl: https://my-squash-tm-url/
+      squashTMAutomatedServerLogin: login
+      squashTMAutomatedServerPassword: password
+      technologyLabels:
+        junit:
+          - linux
+          - junit
+        robotframework:
+          - linux
+          - robotframework
+        uft:
+          - windows
+          - uft

@@ -1,0 +1,30 @@
+metadata:
+  name: Test Inception
+resources:
+  files:
+  - calctxt
+  - calcxml
+  - calcnodntxt
+  - calcnodnxml
+
+jobs:
+  prepare:
+    runs-on: inception
+    steps:
+    - uses: action/prepare-inception@v1
+      with:
+        TEST-squash.tfauto.CalculatorTest.xml: ${{ resources.files.calcxml }}
+        squash.tfauto.CalculatorTest.txt: ${{ resources.files.calctxt }}
+        TEST-squash.tfauto.CalcNoDNTest.xml: ${{ resources.files.calcnodnxml }}
+        squash.tfauto.CalcNoDNTest.txt: ${{ resources.files.calcnodntxt }}
+        
+  junit:
+    runs-on: inception
+    needs: [prepare]
+    generator: tm.squashtest.org/tm.generator@v1
+    with:
+      testPlanUuid: 31d4b368-d70a-4935-a4e1-4f9ed1a0ef67
+      testPlanType: Iteration
+      squashTMUrl: mytmurl
+      squashTMAutomatedServerLogin: tfserver
+      squashTMAutomatedServerPassword: tfserver

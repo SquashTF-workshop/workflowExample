@@ -1,0 +1,25 @@
+---
+apiVersion: opentestfactory.org/v1alpha1
+kind: Workflow
+metadata:
+  name: Agilitest
+defaults:
+  runs-on: agilitest
+
+jobs:
+  executeWithChrome:
+    runs-on: agilitest
+    steps:
+      - uses: action/checkout@v2
+        with:
+          repository: https://github.com/SquashTF-workshop/agilitestDocCheck
+      - uses: agilitest/agilitest@v1
+        with:
+          test: agilitestDocCheck/src/main/chrome_ok.ats
+          test_parameters:
+            atsSuiteDescription: mysuitedescr
+            visualReport: 2
+            atsLogLevel: all
+          environment_variables:
+            var1: value1
+            var2: value2

@@ -1,0 +1,36 @@
+---
+apiVersion: opentestfactory.org/v1alpha1
+kind: Workflow
+metadata:
+  name: Ranorex
+defaults:
+  runs-on: ranorex
+
+jobs:
+  ffOK:
+    runs-on: ranorex
+    steps:
+      - uses: action/checkout@v2
+        with:
+          repository: https://github.com/SquashTF-workshop/ranorexDocCheck
+      - uses: ranorex/ranorex@v1
+        with:
+          solution: ranorexDocCheck
+          solution_file: ranorexDocCheck.sln
+          project: ranorexDocCheckCSharp
+          test_suite: FirefoxDocCheck
+          test_container: FirefoxOK
+
+  ffKO:
+    runs-on: ranorex
+    steps:
+      - uses: action/checkout@v2
+        with:
+          repository: https://github.com/SquashTF-workshop/ranorexDocCheck
+      - uses: ranorex/ranorex@v1
+        with:
+          solution: ranorexDocCheck
+          solution_file: ranorexDocCheck.sln
+          project: ranorexDocCheckCSharp
+          test_suite: FirefoxDocCheck
+          test_container: FirefoxKO

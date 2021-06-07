@@ -1,0 +1,33 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Simple Workflow"
+  },
+  "defaults": {
+    "runs-on":"ssh"
+  },
+  "resources":{
+    "repositories":[
+      {
+        "repository": "SquashTF-workshop/robotDemoXML",
+        "type":"bitbucket",
+        "name":"thisdoesntmatter",
+        "endpoint": "https://${username}:${password}@github.com/"
+      }
+    ]
+  },
+  "jobs": {
+    "explicitJob": {
+      "runs-on":"ssh",
+      "generator":"tm.squashtest.org/tm.generator@v1",
+      "with": {
+        "testPlanUuid":"ee3aed66-a9a7-4fee-af36-ddd07b877d03",
+        "testPlanType":"Iteration",
+        "squashTMUrl":"https://mytmurl",
+        "squashTMAutomatedServerLogin":"tfserver",
+        "squashTMAutomatedServerPassword":"tfserver"
+      }
+    }
+  }
+}

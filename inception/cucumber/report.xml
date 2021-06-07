@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="6" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="19" time="0.011499">
+    <testcase classname="Stock Management To Check Duplicate Execution" name="Current stock duplicate" time="0.003149">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+When I count everything I have in stock.....................................passed
+Then I've at least 5 products in stock......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management To Check Duplicate Execution" name="Error in stock duplicate" time="0.0009">
+        <failure message="java.lang.AssertionError: There is not enough stock&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at concombre.AnnotationSteps.i_ve_at_least_number_products_in_stock(AnnotationSteps.java:37)&#10;&#9;at ✽.I've at least 9 products in stock(classpath:concombre/DuplicateTags.feature:16)&#10;">
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+When I count everything I have in stock.....................................passed
+Then I've at least 9 products in stock......................................failed
+
+StackTrace:
+java.lang.AssertionError: There is not enough stock
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_ve_at_least_number_products_in_stock(AnnotationSteps.java:37)
+	at ✽.I've at least 9 products in stock(classpath:concombre/DuplicateTags.feature:16)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Stock Management To Check Duplicate Execution" name="New products duplicate" time="0.00037">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Ladder"...........................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management To Check Duplicate Execution" name="New products duplicate 2" time="0.000291">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Chest"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management To Check Duplicate Execution" name="New products duplicate 3" time="0.000363">
+        <failure message="java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)&#10;&#9;at ✽.I should have more than the minimum needed(classpath:concombre/DuplicateTags.feature:23)&#10;">
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Table"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................failed
+
+StackTrace:
+java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/DuplicateTags.feature:23)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Stock Management" name="Current stock main" time="0.00024">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+When I count everything I have in stock.....................................passed
+Then I've at least 2 products in stock......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management" name="New products main" time="0.000268">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Ladder"...........................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management" name="New products main 2" time="0.000263">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Chest"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management" name="New products main 3" time="0.000358">
+        <failure message="java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)&#10;&#9;at ✽.I should have more than the minimum needed(classpath:concombre/Main.feature:19)&#10;">
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Table"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................failed
+
+StackTrace:
+java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/Main.feature:19)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Stock Management is OK" name="Stock success" time="0.000243">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+When I count everything I have in stock.....................................passed
+Then I've at least 1 products in stock......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management To Check Tag Inheritance" name="Current stock with tag inheritance" time="0.000211">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+When I count everything I have in stock.....................................passed
+Then I've at least 5 products in stock......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management To Check Tag Inheritance" name="Error in stock with tag inheritance" time="0.000321">
+        <failure message="java.lang.AssertionError: There is not enough stock&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at concombre.AnnotationSteps.i_ve_at_least_number_products_in_stock(AnnotationSteps.java:37)&#10;&#9;at ✽.I've at least 9 products in stock(classpath:concombre/TagInheritance.feature:16)&#10;">
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+When I count everything I have in stock.....................................passed
+Then I've at least 9 products in stock......................................failed
+
+StackTrace:
+java.lang.AssertionError: There is not enough stock
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_ve_at_least_number_products_in_stock(AnnotationSteps.java:37)
+	at ✽.I've at least 9 products in stock(classpath:concombre/TagInheritance.feature:16)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Stock Management To Check Tag Inheritance" name="New products with tag inheritance" time="0.000301">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Ladder"...........................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management To Check Tag Inheritance" name="New products with tag inheritance 2" time="0.000273">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Chest"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management To Check Tag Inheritance" name="New products with tag inheritance 3" time="0.000471">
+        <failure message="java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)&#10;&#9;at ✽.I should have more than the minimum needed(classpath:concombre/TagInheritance.feature:23)&#10;">
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Table"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................failed
+
+StackTrace:
+java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/TagInheritance.feature:23)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Stock Management" name="Current stock" time="0.002499">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+When I count everything I have in stock.....................................passed
+Then I've at least 2 products in stock......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management" name="New products" time="0.000301">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Ladder"...........................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management" name="New products 2" time="0.000269">
+        <system-out>
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Chest"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stock Management" name="New products 3" time="0.000408">
+        <failure message="java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)&#10;&#9;at ✽.I should have more than the minimum needed(classpath:concombre/Test_Folder__a/240_tc-gherkin.feature:23)&#10;">
+            <![CDATA[Given I've 2 products.......................................................passed
+And I add 3 additional products.............................................passed
+Given I need to add some "Table"............................................passed
+And I know how much I have..................................................passed
+When I add it to the stock..................................................passed
+Then I should have more than the minimum needed.............................failed
+
+StackTrace:
+java.lang.AssertionError: Error detected, we need at least 5 products, right now we have only 3 products
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at concombre.AnnotationSteps.i_should_have_more_than_the_minimum_needed(AnnotationSteps.java:70)
+	at ✽.I should have more than the minimum needed(classpath:concombre/Test_Folder__a/240_tc-gherkin.feature:23)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

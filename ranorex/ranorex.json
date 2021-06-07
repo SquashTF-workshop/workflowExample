@@ -1,0 +1,51 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Ranorex"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "ranorex",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/ranorexDocCheck"
+          }
+        },
+        {
+          "uses": "ranorex/ranorex@v1",
+          "with": {
+            "solution": "ranorexDocCheck",
+            "solution_file": "ranorexDocCheck.sln",
+            "project": "ranorexDocCheckCSharp",
+            "test_suite": "FirefoxDocCheck",
+            "test_container": "FirefoxOK"
+          }
+        }
+      ]
+    },
+    "thisIsAFailure": {
+      "runs-on": "ranorex",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/ranorexDocCheck"
+          }
+        },
+        {
+          "uses": "ranorex/ranorex@v1",
+          "with": {
+            "solution": "ranorexDocCheck",
+            "solution_file": "ranorexDocCheck.sln",
+            "project": "ranorexDocCheckCSharp",
+            "test_suite": "FirefoxDocCheck",
+            "test_container": "FirefoxKO"
+          }
+        }
+      ]
+    }
+  }
+}
