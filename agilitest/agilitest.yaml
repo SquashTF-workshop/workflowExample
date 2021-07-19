@@ -10,12 +10,12 @@ jobs:
   executeWithChrome:
     runs-on: agilitest
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
         with:
           repository: https://github.com/SquashTF-workshop/agilitestDocCheck
       - uses: agilitest/agilitest@v1
         with:
-          test: agilitestDocCheck/src/main/chrome_ok.ats
+          test: agilitestDocCheck/src/main/ats/chrome_ok.ats
           test_parameters:
             atsSuiteDescription: mysuitedescr
             visualReport: 2

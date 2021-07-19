@@ -5,14 +5,14 @@
         "name": "Robot"
     },
     "defaults": {
-        "runs-on": "ssh"
+        "runs-on": "robotframework"
     },
     "jobs": {
         "thisIsASuccess": {
-            "runs-on": "ssh",
+            "runs-on": "robotframework",
             "steps": [
             {
-              "uses": "action/checkout@v1",
+              "uses": "actions/checkout@v2",
               "with": {
                   "repository": "https://github.com/SquashTF-workshop/robotDemoXML"
               }
@@ -26,11 +26,11 @@
             ]
         },
         "thisIsAFailure": {
-            "runs-on": "ssh",
+            "runs-on": "robotframework",
             "needs": "thisIsASuccess",
             "steps": [
             {
-              "uses": "action/checkout@v1",
+              "uses": "actions/checkout@v2",
               "with": {
                   "repository": "https://github.com/SquashTF-workshop/robotTFParamCheck"
               }

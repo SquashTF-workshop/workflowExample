@@ -7,7 +7,7 @@ jobs:
   prepare:
     runs-on: inception
     steps:
-    - uses: action/prepare-inception@v1
+    - uses: actions/prepare-inception@v1
       with:
         ranorex-report.rxlog.data: ${{ resources.files.rxlog }}
         

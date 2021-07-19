@@ -9,7 +9,7 @@
     thisIsASuccess:
       runs-on: junit
       steps:
-          - uses: action/checkout@v2
+          - uses: actions/checkout@v2
             with:
               repository: https://github.com/SquashTF-workshop/junitCalc
           - uses: junit/mvntest@v1

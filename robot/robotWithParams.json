@@ -4,15 +4,12 @@
     "metadata": {
         "name": "Robot With Params"
     },
-    "defaults": {
-        "runs-on": "ssh"
-    },
     "jobs": {
         "testParamFailure": {
-            "runs-on": "ssh",
+            "runs-on": "robotframework",
             "steps": [
             {
-              "uses": "action/checkout@v1",
+              "uses": "actions/checkout@v2",
               "with": {
                   "repository": "https://github.com/SquashTF-workshop/robotTFParamCheck"
               }
@@ -38,11 +35,11 @@
             ]
         },
         "testParamSuccess": {
-            "runs-on": "ssh",
+            "runs-on": "robotframework",
             "needs": "testParamFailure",
             "steps": [
             {
-              "uses": "action/checkout@v1",
+              "uses": "actions/checkout@v2",
               "with": {
                   "repository": "https://github.com/SquashTF-workshop/robotTFParamCheck"
               }

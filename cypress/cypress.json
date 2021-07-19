@@ -4,19 +4,17 @@
   "metadata": {
     "name": "Cypress"
   },
-  "defaults": {
-    "runs-on": "cypress"
-  },
   "variables": {
     "CYPRESS_CACHE_FOLDER": "/root/.cache/Cypress",
-    "TERM": "xterm"
+    "TERM": "xterm",
+    "NO_COLOR": "1"
   },
   "jobs": {
     "executeWithChrome": {
       "runs-on": "cypress",
       "steps": [
         {
-          "uses": "action/checkout@v2",
+          "uses": "actions/checkout@v2",
           "with": {
             "repository": "https://github.com/SquashTF-workshop/cypressDocCheck"
           }
@@ -36,7 +34,7 @@
       "runs-on": "cypress",
       "steps": [
         {
-          "uses": "action/checkout@v2",
+          "uses": "actions/checkout@v2",
           "with": {
             "repository": "https://github.com/SquashTF-workshop/cypressDocCheck"
           }

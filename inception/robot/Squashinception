@@ -9,7 +9,7 @@ jobs:
   prepare:
     runs-on: inception
     steps:
-    - uses: action/prepare-inception@v1
+    - uses: actions/prepare-inception@v1
       with:
         output.xml: ${{ resources.files.output }}
         report.html: ${{ resources.files.report }}

@@ -4,15 +4,12 @@
   "metadata": {
     "name": "SoapUI"
   },
-  "defaults": {
-    "runs-on": "soapui"
-  },
   "jobs": {
     "thisIsASuccess": {
       "runs-on": "soapui",
       "steps": [
         {
-          "uses": "action/checkout@v2",
+          "uses": "actions/checkout@v2",
           "with": {
             "repository": "https://github.com/SquashTF-workshop/soapuiOpenWeather"
           }
@@ -31,7 +28,7 @@
       "runs-on": "soapui",
       "steps": [
         {
-          "uses": "action/checkout@v2",
+          "uses": "actions/checkout@v2",
           "with": {
             "repository": "https://github.com/SquashTF-workshop/soapuiOpenWeather"
           }

@@ -10,7 +10,7 @@ jobs:
   ffOK:
     runs-on: ranorex
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
         with:
           repository: https://github.com/SquashTF-workshop/ranorexDocCheck
       - uses: ranorex/ranorex@v1
@@ -24,7 +24,7 @@ jobs:
   ffKO:
     runs-on: ranorex
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
         with:
           repository: https://github.com/SquashTF-workshop/ranorexDocCheck
       - uses: ranorex/ranorex@v1
