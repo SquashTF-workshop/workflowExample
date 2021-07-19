@@ -1,0 +1,73 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "UFT"
+  },
+  "defaults": {
+    "runs-on": "uft"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "uft",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/uftParamDocCheck"
+          }
+        },
+        {
+          "uses": "uft/params@v1",
+          "with": {
+            "data": {
+              "global": {
+                "DSNAME": "Squash TF",
+                "DS_linkLabel": "JUnit",
+                "DS_menuLabel": "METADATA"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "uft/execute@v1",
+          "with": {
+            "test": "uftParamDocCheck/DatasetCheck"
+          }
+        }
+      ]
+    },
+    "thisIsAlsoASuccess": {
+      "runs-on": "uft",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/uftParamDocCheck"
+          }
+        },
+        {
+          "uses": "uft/params@v1",
+          "with": {
+            "data": {
+              "test": {
+                "IT_CUF_link": "Robot",
+                "CPG_CUF_section": "Prerequisites",
+                "TC_CUF_version": "doc-stable",
+                "TS_CUF_menu": "Runner functions"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "uft/execute@v1",
+          "with": {
+            "test": "uftParamDocCheck/CUFCheck"
+          }
+        }
+      ]
+    }
+  }
+}

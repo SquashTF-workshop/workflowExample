@@ -1,0 +1,57 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "UFT"
+  },
+  "defaults": {
+    "runs-on": "uft"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "uft",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/uftParamDocCheck"
+          }
+        },
+        {
+          "uses": "uft/uft@v1",
+          "with": {
+            "datasource": "uftParamDocCheck/CUFCheck",
+            "test_parameters": {
+              "IT_CUF_link": "Robot",
+              "CPG_CUF_section": "Prerequisites",
+              "TC_CUF_version": "doc-stable",
+              "TS_CUF_menu": "Runner functions"
+            }
+          }
+        }
+      ]
+    },
+    "thisIsAlsoASuccess": {
+      "runs-on": "uft",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/uftParamDocCheck"
+          }
+        },
+        {
+          "uses": "uft/uft@v1",
+          "with": {
+            "datasource": "uftParamDocCheck/DatasetCheck",
+            "test_parameters": {
+              "DSNAME": "Squash TF",
+              "DS_linkLabel": "JUnit",
+              "DS_menuLabel": "METADATA"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

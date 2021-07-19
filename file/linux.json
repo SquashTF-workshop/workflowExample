@@ -1,0 +1,72 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "File"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "linux",
+      "steps": [
+        {
+          "uses": "actions/touch-file",
+          "with": {
+            "path": "fileFromTouch.ini"
+          }
+        },
+        {
+          "uses": "actions/touch-file",
+          "with": {
+            "path": "fileFromTouch.ini"
+          }
+        },
+        {
+          "uses": "actions/touch-file",
+          "with": {
+            "path": "anotherFileFromTouch.ini"
+          }
+        },
+        {
+          "uses": "actions/create-file@v1",
+          "with": {
+            "data": {
+              "firstset": {
+                "param11": "val11",
+                "param12": "val12"
+              },
+              "secondset": {
+                "param2": "val2"
+              }
+            },
+            "format": "ini",
+            "path": "fileFromCreate.ini"
+          }
+        },
+        {
+          "run": "sleep 30"
+        },
+        {
+          "uses": "actions/delete-file@v1",
+          "with": {
+            "path": "fileFromTouch.ini"
+          }
+        },
+        { 
+          "run": "sleep 30"
+        },
+        {
+          "uses": "actions/get-file@v1",
+          "with": {
+            "path": "fileFromCreate.ini"
+          }
+        },
+        {
+          "uses": "actions/get-files@v1",
+          "with": {
+            "pattern": "*.ini"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "UFT"
+  },
+  "defaults": {
+    "runs-on": "uft"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "uft",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/uftDocCheck"
+          }
+        },
+        {
+          "uses": "uft/execute@v1",
+          "with": {
+            "test": "uftDocCheck/JUnitOK"
+          }
+        }
+      ]
+    },
+    "thisIsAFailure": {
+      "runs-on": "uft",
+      "steps": [
+        {
+          "uses": "action/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/uftDocCheck"
+          }
+        },
+        {
+          "uses": "uft/execute@v1",
+          "with": {
+            "test": "uftDocCheck/RobotKO"
+          }
+        }
+      ]
+    }
+  }
+}

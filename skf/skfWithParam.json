@@ -1,0 +1,61 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "SKF"
+  },
+  "defaults": {
+    "runs-on": "skf"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "skf",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/skfCompareXMLParam"
+          }
+        },
+        {
+          "uses": "skf/skf@v1",
+          "with": {
+            "root_project": "skfCompareXMLParam",
+            "tests": [
+              {
+                "script": "compareXmlDataset.ta",
+                "data": {
+                  "randomParameter": "9533",
+                  "DS_label": "AMD Ryzen 9 3900X"
+                }
+                
+              },
+              {
+                "script": "ecosystem/compareXmlTSCUF.ta",
+                "data": {
+                  "TS_CUF_threads": "16"
+                }
+              },
+              {
+                "script": "ecosystem2/compareXmlCPGCUF.ta"
+              },
+              {
+                "script": "compareXmlITCUF.ta"
+              },
+              {
+                "script": "compareXmlTCCUF.ta",
+                "data": {
+                  "TC_CUF_price": "445"
+                }
+              }
+            ],
+            "global_parameters": {
+              "IT_CUF_socket": "LGA 1151",
+              "CPG_CUF_clockspeed": "3.6"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

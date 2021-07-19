@@ -1,0 +1,71 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "SKF"
+  },
+  "defaults": {
+    "runs-on": "skf"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "skf",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/skfCompareXMLParam"
+          }
+        },
+        {
+          "uses": "skf/params@v1",
+          "with": {
+            "data": {
+              "test": {
+                "CPG_CUF_clockspeed": "3.6"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "skf/execute@v1",
+          "with": {
+            "test": "skfCompareXMLParam/tests.ecosystem2#compareXmlCPGCUF.ta"
+          }
+        }
+      ]
+    },
+    "thisIsAFailure": {
+      "runs-on": "skf",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/skfCompareXMLParam"
+          }
+        },
+        {
+          "uses": "skf/params@v1",
+          "with": {
+            "data": {
+              "test": {
+                "toto": "zozo"
+              },
+              "global": {
+                "DS_label": "Intel i9-9900K"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "skf/execute@v1",
+          "with": {
+            "test": "skfCompareXMLParam/tests#compareXmlDataset.ta"
+          }
+        }
+      ]
+    }
+  }
+}

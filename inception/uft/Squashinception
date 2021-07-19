@@ -1,0 +1,26 @@
+metadata:
+  name: Test Inception
+resources:
+  files:
+  - tar
+  - xml
+
+jobs:
+  prepare:
+    runs-on: inception
+    steps:
+    - uses: actions/prepare-inception@v1
+      with:
+        uft-results.xml: ${{ resources.files.xml }}
+        uft-report.tar: ${{ resources.files.tar }}
+        
+  junit:
+    runs-on: inception
+    needs: [prepare]
+    generator: tm.squashtest.org/tm.generator@v1
+    with:
+      testPlanUuid: 96ef6e4b-b671-4957-9679-1e1d5eb93124
+      testPlanType: Iteration
+      squashTMUrl: https://mytmurl
+      squashTMAutomatedServerLogin: tfserver
+      squashTMAutomatedServerPassword: tfserver

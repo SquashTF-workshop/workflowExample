@@ -1,0 +1,30 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "SKF"
+  },
+  "defaults": {
+    "runs-on": "skf"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "skf",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/skfCompareXMLParam"
+          }
+        },
+        {
+          "uses": "skf/skf@v1",
+          "with": {
+            "root_project": "skfCompareXMLParam",
+            "testsuite": "customsuite.json"
+          }
+        }
+      ]
+    }
+  }
+}
