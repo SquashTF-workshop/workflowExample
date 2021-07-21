@@ -1,0 +1,32 @@
+metadata:
+  name: Test Inception
+resources:
+  files:
+  - tar
+  - deftxt
+  - defxml
+  - ecotxt
+  - ecoxml
+
+jobs:
+  prepare:
+    runs-on: inception
+    steps:
+    - uses: actions/prepare-inception@v1
+      with:
+        html-reports.tar: ${{ resources.files.tar }}
+        TEST-tests.xml: ${{ resources.files.defxml }}
+        tests.txt: ${{ resources.files.deftxt }}
+        TEST-tests.ecosystem2.xml: ${{ resources.files.ecoxml }}
+        tests.ecosystem2.txt: ${{ resources.files.ecotxt }}
+        
+  junit:
+    runs-on: inception
+    needs: [prepare]
+    generator: tm.squashtest.org/tm.generator@v1
+    with:
+      testPlanUuid: 0c2b631e-23a5-44c1-ac14-9412c93365ab
+      testPlanType: Iteration
+      squashTMUrl: https://mytmurl
+      squashTMAutomatedServerLogin: tfserver
+      squashTMAutomatedServerPassword: tfserver
