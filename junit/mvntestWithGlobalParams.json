@@ -1,0 +1,50 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "JUnit"
+  },
+  "defaults": {
+    "runs-on": "junit"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "junit",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/junitCalcNewParam"
+          }
+        },
+        {
+          "uses": "junit/params@v1",
+          "with": {
+            "data": {
+              "global": {
+                "TC_CUF_testcase": "50",
+                "IT_CUF_iteration": "iterationValue",
+                "TS_CUF_testsuite": "62.35f",
+                "CPG_CUF_campaign": "1.25",
+                "DSNAME": "true",
+                "DS_param": "true"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "junit/mvntest@v1",
+          "with": {
+            "test": "squash.tfauto.ParameterTest#globalscope",
+            "properties": {
+              "prop1": "value1",
+              "prop2": "value2"
+            }
+          },
+          "working-directory": "junitCalcNewParam"
+        }
+      ]
+    }
+  }
+}
