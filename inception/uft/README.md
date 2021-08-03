@@ -7,6 +7,10 @@ Le projet de référence est le suivant : https://github.com/SquashTF-workshop/u
 Le fichier XML et le .tar présent dans ce dossier sont les fichiers générés suite à l'exécution
 d'un cas de test (car UFT demande un cas de test spécifique à l'exécution).
 
+Ce qui commence par uft-* concerne un test en succès.
+
+Ce qui commence par ko-* concerne un test en échec
+
 Les pièces jointes doivent avoir le format suivant :
 
 * uft-results.xml
@@ -18,3 +22,5 @@ Il n'est possible d'envoyer qu'un seul rapport par PEaC, dû au fonctionnement d
 Exemple de référence de test à indiquer côté TM : 
 
 * uftDocCheck/JUnitOK
+
+* uftDocCheck/RobotKO

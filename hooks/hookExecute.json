@@ -1,0 +1,50 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "JUnit"
+  },
+  "defaults": {
+    "runs-on": "junit"
+  },
+"hooks": [
+    {
+      "name": "inpeachook",
+      "events": [
+        {
+          "categoryPrefix": "junit",
+          "category": "execute"
+        }
+      ],
+      "before": [
+        {
+          "run": "echo BeforePeacHook"
+        }
+      ],
+      "after": [
+        {
+          "run": "echo AfterPeacHook"
+        }
+      ]
+    }
+  ],
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "junit",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/junitCalc"
+          }
+        },
+        {
+          "uses": "junit/execute@v1",
+          "with": {
+            "test": "junitCalc/squash.tfauto.CalculatorTest#addSuccess"
+          }
+        }
+      ]
+    }
+  }
+}
