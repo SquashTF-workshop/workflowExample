@@ -4,6 +4,7 @@ resources:
   files:
   - xml
   - json
+  - tar
 jobs:
   prepare:
     runs-on: inception
@@ -12,6 +13,7 @@ jobs:
       with:
         report.xml: ${{ resources.files.xml }}
         report.json: ${{ resources.files.json }}
+        html-report.tar: ${{ resources.files.tar }}
         
   cucumber:
     runs-on: inception
