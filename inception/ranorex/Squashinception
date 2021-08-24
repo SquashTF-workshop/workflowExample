@@ -3,7 +3,7 @@ metadata:
 resources:
   files:
   - rxlogdata
-  - rxlog
+  - rxzlog
 jobs:
   prepare:
     runs-on: inception
@@ -11,7 +11,7 @@ jobs:
     - uses: actions/prepare-inception@v1
       with:
         ranorex-report.rxlog.data: ${{ resources.files.rxlogdata }}
-        ranorex-report.rxlog: ${{ resources.files.rxlog }}
+        ranorex-report.rxzlog: ${{ resources.files.rxlog }}
         
   ranorex:
     runs-on: inception
