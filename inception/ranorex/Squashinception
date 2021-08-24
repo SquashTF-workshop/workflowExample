@@ -2,6 +2,7 @@ metadata:
   name: Test Inception
 resources:
   files:
+  - rxlogdata
   - rxlog
 jobs:
   prepare:
@@ -9,7 +10,8 @@ jobs:
     steps:
     - uses: actions/prepare-inception@v1
       with:
-        ranorex-report.rxlog.data: ${{ resources.files.rxlog }}
+        ranorex-report.rxlog.data: ${{ resources.files.rxlogdata }}
+        ranorex-report.rxlog: ${{ resources.files.rxlog }}
         
   ranorex:
     runs-on: inception
