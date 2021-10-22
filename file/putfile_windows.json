@@ -1,0 +1,54 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "PutFile Windows"
+  },
+  "resources": {
+    "files": ["dummy.ini", "second.ini", "third.ini"]
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": ["windows"],
+      "steps": [
+        {
+          "uses": "actions/put-file@v1",
+          "with": {
+            "file": "dummy.ini",
+            "path": "true.ini"
+          }
+        },
+        {
+          "run": "type true.ini"
+        },
+        {
+          "run": "mkdir folder"
+        },
+        {
+          "uses": "actions/put-file@v1",
+          "with": {
+            "file": "second.ini",
+            "path": "folder/another.ini"
+          }
+        },
+        {
+          "run": "type folder\\another.ini"
+        },
+        {
+          "run": "mkdir workfolder"
+        },
+        {
+          "uses": "actions/put-file@v1",
+          "with": {
+            "file": "third.ini",
+            "path": "anotherworking.ini"
+          },
+          "working-directory": "workfolder"
+        },
+        {
+          "run": "type workfolder\\anotherworking.ini"
+        }
+      ]
+    }
+  }
+}
