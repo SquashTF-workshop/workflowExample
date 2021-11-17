@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Standard" tests="7" time="0.534">
+  <testsuite name="request_ok / forecast5d" id="1b89b600-ff36-4271-954d-573a0cedbd93" timestamp="2021-11-05T15:00:41.935Z" tests="2" failures="0" errors="0" time="0.210">
+    <testcase name="Check that HTTP status code is 200" time="0.210" classname="Standard"/>
+    <testcase name="Check that cnt is equal to 40" time="0.210" classname="Standard"/>
+  </testsuite>
+  <testsuite name="request_ko / history404" id="a722aa43-bada-4fe6-aeed-f3d7405aef6f" timestamp="2021-11-05T15:00:41.935Z" tests="1" failures="1" errors="0" time="0.025">
+    <testcase name="Check that HTTP status code is 200" time="0.025" classname="Standard">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d579a4d6-5f4d-4c1d-97f6-7a59dccf034e.]]>
+        <![CDATA[Collection name: Standard.]]>
+        <![CDATA[Request name: request_ko / history404.]]>
+        <![CDATA[Test description: Check that HTTP status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="request_subfolder / ok / moscow_forecast" id="136c410d-79b7-4e1a-8b56-4ffa86ccc0c2" timestamp="2021-11-05T15:00:41.935Z" tests="2" failures="0" errors="0" time="0.070">
+    <testcase name="Check that HTTP status code is 200" time="0.070" classname="Standard"/>
+    <testcase name="Check that city is Moscow" time="0.070" classname="Standard"/>
+  </testsuite>
+  <testsuite name="request_subfolder / ko / history1" id="41215940-511a-4b42-bd2c-8d7a34b48766" timestamp="2021-11-05T15:00:41.935Z" tests="2" failures="1" errors="0" time="0.064">
+    <testcase name="Check that HTTP status code is 200" time="0.064" classname="Standard"/>
+    <testcase name="Check that city_id is 288" time="0.064" classname="Standard">
+      <failure type="AssertionFailure" message="expected 2885679 to deeply equal 288">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d579a4d6-5f4d-4c1d-97f6-7a59dccf034e.]]>
+        <![CDATA[Collection name: Standard.]]>
+        <![CDATA[Request name: request_subfolder / ko / history1.]]>
+        <![CDATA[Test description: Check that city_id is 288.]]>
+        <![CDATA[Error message: expected 2885679 to deeply equal 288.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 2885679 to deeply equal 288
+   at Object.eval sandbox-script.js:2:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="request_subfolder / suite / airpollution_ok" id="7c5529b3-1885-48a6-bc45-da850280163e" timestamp="2021-11-05T15:00:41.935Z" tests="2" failures="0" errors="0" time="0.058">
+    <testcase name="Check that HTTP status code is 200" time="0.058" classname="Standard"/>
+    <testcase name="Check that the first pressure is equal to 1000" time="0.058" classname="Standard"/>
+  </testsuite>
+  <testsuite name="request_subfolder / suite / airpollution2_ko" id="f5c9db1f-9ec2-4064-b120-ce7088f6c153" timestamp="2021-11-05T15:00:41.935Z" tests="2" failures="1" errors="0" time="0.055">
+    <testcase name="Check that HTTP status code is 200" time="0.055" classname="Standard"/>
+    <testcase name="Check that the time is equal to 2020-01-26T01:04:15Z" time="0.055" classname="Standard">
+      <failure type="AssertionFailure" message="expected 1000 to deeply equal '2020-01-26T01:04:15Z0'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d579a4d6-5f4d-4c1d-97f6-7a59dccf034e.]]>
+        <![CDATA[Collection name: Standard.]]>
+        <![CDATA[Request name: request_subfolder / suite / airpollution2_ko.]]>
+        <![CDATA[Test description: Check that the time is equal to 2020-01-26T01:04:15Z.]]>
+        <![CDATA[Error message: expected 1000 to deeply equal '2020-01-26T01:04:15Z0'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 1000 to deeply equal '2020-01-26T01:04:15Z0'
+   at Object.eval sandbox-script.js:2:6).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="rootairpoll_ko" id="1fe3169f-bb60-4ab0-af28-d7dd8aa4835a" timestamp="2021-11-05T15:00:41.935Z" tests="2" failures="1" errors="0" time="0.052">
+    <testcase name="Check that HTTP status code is 200" time="0.052" classname="Standard"/>
+    <testcase name="Check that precision is equal to -5-07" time="0.052" classname="Standard">
+      <failure type="AssertionFailure" message="expected -4.999999987376214e-7 to deeply equal '-5-07'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: d579a4d6-5f4d-4c1d-97f6-7a59dccf034e.]]>
+        <![CDATA[Collection name: Standard.]]>
+        <![CDATA[Request name: rootairpoll_ko.]]>
+        <![CDATA[Test description: Check that precision is equal to -5-07.]]>
+        <![CDATA[Error message: expected -4.999999987376214e-7 to deeply equal '-5-07'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected -4.999999987376214e-7 to deeply equal '-5-07'
+   at Object.eval sandbox-script.js:2:7).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

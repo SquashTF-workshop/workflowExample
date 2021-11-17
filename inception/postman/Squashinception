@@ -1,0 +1,25 @@
+metadata:
+  name: Test Inception
+resources:
+  files:
+  - xml
+  - html
+jobs:
+  prepare:
+    runs-on: inception
+    steps:
+    - uses: actions/prepare-inception@v1
+      with:
+        newman-run-report.html: ${{ resources.files.html }}
+        newman-run-report.xml: ${{ resources.files.xml }}
+
+  robot:
+    runs-on: inception
+    needs: [prepare]
+    generator: tm.squashtest.org/tm.generator@v1
+    with:
+      testPlanUuid:  eaef8822-6c45-43c9-95a5-643aebe04df8
+      testPlanType: Iteration
+      squashTMUrl: https://mytmurl
+      squashTMAutomatedServerLogin: tfserver
+      squashTMAutomatedServerPassword: tfserver
