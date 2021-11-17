@@ -1,0 +1,40 @@
+{
+    "apiVersion": "opentestfactory.org/v1alpha1",
+    "kind": "Workflow",
+    "metadata": {
+        "name": "Postman"
+    },
+    "jobs": {
+        "thisIsASuccess": {
+            "runs-on": "postman",
+            "steps": [
+            {
+              "uses": "actions/checkout@v2",
+              "with": {
+                  "repository": "https://github.com/SquashTF-workshop/postmanOpenWeather"
+              }
+            },
+            {
+              "uses": "postman/params@v1",
+              "with": {
+                "data": {
+                  "global": {
+                    "dt": 1523188800,
+                    "t10": 274.51,
+                    "moisture": 0.161
+                  }
+                },
+                "format": "tm.squashtest.org/params@v1"
+              }
+            },
+            {
+              "uses": "postman/postman@v1",
+              "with": {
+                  "collection": "postmanOpenWeather/Globals.postman_collection.json",
+                  "globals": "_opentf_global_params.json"
+              }
+            }
+            ]
+        }
+    }            
+}

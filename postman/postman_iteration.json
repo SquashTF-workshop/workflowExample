@@ -1,0 +1,27 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Postman"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": "postman",
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/postmanOpenWeather"
+          }
+        },
+        {
+          "uses": "postman/postman@v1",
+          "with": {
+            "collection": "postmanOpenWeather/IterationData.postman_collection.json",
+            "iteration-data": "postmanOpenWeather/iteration_data.json"
+          }
+        }
+      ]
+    }
+  }
+}
