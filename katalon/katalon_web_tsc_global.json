@@ -1,0 +1,44 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Katalon Web TSC Global"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": ["katalon"],
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/katalonWeb"
+          }
+        },
+        {
+          "uses": "katalon/params@v1",
+          "with": {
+            "data": {
+              "global": {
+                "DSNAME": "Logging",
+                "DS_list": "List tests",
+                "TC_CUF_run": "Run tests",
+                "DS_value": "15",
+                "IT_CUF_db_title": "Database Plugin",
+                "CPG_CUF_fc_title": "Filechecker Plugin",
+                "TS_CUF_ftp_title": "FTP Plugin"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "katalon/katalon@v1",
+          "with": {
+            "project": "katalonWeb/DocCheck.prj",
+            "test-suite-collection-path": "Test Suites/Everything"
+          }
+        }
+      ]
+    }
+  }
+}

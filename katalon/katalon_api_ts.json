@@ -1,0 +1,45 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Katalon API TS"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": ["katalon"],
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/katalonAPI"
+          }
+        },
+        {
+          "uses": "katalon/katalon@v1",
+          "with": {
+            "project": "katalonAPI/API.prj",
+            "test-suite-path": "Test Suites/NoParamOK"
+          }
+        }
+      ]
+    },
+    "thisIsAFailure": {
+      "runs-on": ["katalon"],
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/katalonAPI"
+          }
+        },
+        {
+          "uses": "katalon/katalon@v1",
+          "with": {
+            "project": "katalonAPI/API.prj",
+            "test-suite-path": "Test Suites/NoParamKO"
+          }
+        }
+      ]
+    }
+  }
+}

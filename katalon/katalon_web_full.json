@@ -1,0 +1,35 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Katalon Web TSC Full"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": ["katalon"],
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/katalonWeb"
+          }
+        },
+        {
+          "uses": "katalon/katalon@v1",
+          "with": {
+            "project": "katalonWeb/DocCheck.prj",
+            "test-suite-collection-path": "Test Suites/Everything",
+            "browser-type": "Web Service",
+            "execution-profile": "filled_param",
+            "retry": "3",
+            "status-delay": "60",
+            "send-mail": "dummy@dummy.dummy",
+            "report-folder": "newReportFolder",
+            "report-file-name": "custom_name",
+            "extra-options": "-retryStrategy=failedExecutions -maxFailedTests=1"
+          }
+        }
+      ]
+    }
+  }
+}

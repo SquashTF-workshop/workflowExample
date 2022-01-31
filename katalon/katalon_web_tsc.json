@@ -1,0 +1,27 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Katalon Web TSC"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": ["katalon"],
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/katalonWeb"
+          }
+        },
+        {
+          "uses": "katalon/katalon@v1",
+          "with": {
+            "project": "katalonWeb/DocCheck.prj",
+            "test-suite-collection-path": "Test Suites/Everything"
+          }
+        }
+      ]
+    }
+  }
+}

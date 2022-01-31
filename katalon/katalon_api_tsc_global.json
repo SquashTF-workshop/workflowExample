@@ -1,0 +1,43 @@
+{
+  "apiVersion": "opentestfactory.org/v1alpha1",
+  "kind": "Workflow",
+  "metadata": {
+    "name": "Katalon API TSC Global"
+  },
+  "jobs": {
+    "thisIsASuccess": {
+      "runs-on": ["katalon"],
+      "steps": [
+        {
+          "uses": "actions/checkout@v2",
+          "with": {
+            "repository": "https://github.com/SquashTF-workshop/katalonAPI"
+          }
+        },
+        {
+          "uses": "katalon/params@v1",
+          "with": {
+            "data": {
+              "global": {
+                "DS_param": "800",
+                "DSNAME": "Clear",
+                "TC_CUF_icon": "01n",
+                "CPG_CUF_humidity": "100",
+                "IT_CUF_sealevel": "1031.04",
+                "TS_CUF_grndlevel": "1021.39"
+              }
+            },
+            "format": "tm.squashtest.org/params@v1"
+          }
+        },
+        {
+          "uses": "katalon/katalon@v1",
+          "with": {
+            "project": "katalonAPI/API.prj",
+            "test-suite-collection-path": "Test Suites/Folder/Everything"
+          }
+        }
+      ]
+    }
+  }
+}
