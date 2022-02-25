@@ -35,7 +35,7 @@
           "uses": "katalon/katalon@v1",
           "with": {
             "project": "katalonWeb/DocCheck.prj",
-            "test-suite-collection-path": "Test Suites/FullParam"
+            "test-suite-path": "Test Suites/FullParam"
           }
         }
       ]
