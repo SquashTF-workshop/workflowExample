@@ -14,13 +14,14 @@
         {
           "uses": "actions/checkout@v2",
           "with": {
-            "repository": "https://github.com/SquashTF-workshop/cucumberStockManagement"
+            "repository": "https://github.com/SquashTF-workshop/newCucumberStockManagement",
+            "ref": "7.0.0-nosuite"
           }
         },
         {
-          "uses": "cucumber/cucumber@v1",
+          "uses": "cucumber5/cucumber@v1",
           "with": {
-            "test": "cucumberStockManagement/src/test/resources/concombre/TagInheritance.feature",
+            "test": "newCucumberStockManagement/src/test/resources/concombre/TagInheritance.feature",
             "tag": "SecondScenario",
             "reporters": [
               "html",

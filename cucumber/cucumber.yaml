@@ -22,5 +22,4 @@
             tag: SecondScenario
             reporters:
             - html
-            - pretty
             - junit
