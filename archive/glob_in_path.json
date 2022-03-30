@@ -1,0 +1,56 @@
+{
+    "apiVersion": "opentestfactory.org/v1alpha1",
+    "kind": "Workflow",
+    "metadata": {
+        "name": "Robot"
+    },
+    "defaults": {
+        "runs-on": "robotframework"
+    },
+    "jobs": {
+        "thisIsAFailure": {
+            "runs-on": ["linux"],
+            "steps": [
+            {
+              "run": "mkdir -p folder1/subfolder1"
+            },
+            {
+              "run": "mkdir -p folder2/subfolder1"
+            },
+            {
+              "run": "mkdir -p folder2/subfolder2/file_folder"
+            },
+            {
+              "run": "echo val1 > folder1/subfolder1/file1"
+            },
+            {
+              "run": "echo val2 > folder2/subfolder1/file2"
+            },
+            {
+              "run": "echo val3 > folder2/subfolder2/file3"
+            },
+            {
+              "run": "echo val4 > folder2/subfolder2/file4"
+            },
+            {
+              "run": "echo val5 > folder2/subfolder2/file_folder/file"
+            },
+            {
+              "uses": "actions/create-archive@v1",
+              "with": {
+                  "path": "archive.tar",
+                  "patterns": [
+                    "folder2/subfolder2/*/file"
+              ]
+              }
+            },
+            {
+                    "uses": "actions/get-file@v1",
+                    "with": {
+                      "path": "archive.tar"
+                    }
+            }
+            ]
+        }
+    }
+}

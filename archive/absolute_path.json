@@ -1,0 +1,35 @@
+{
+    "apiVersion": "opentestfactory.org/v1alpha1",
+    "kind": "Workflow",
+    "metadata": {
+        "name": "Robot"
+    },
+    "defaults": {
+        "runs-on": "robotframework"
+    },
+    "jobs": {
+        "thisIsAFailure": {
+            "runs-on": ["linux"],
+            "steps": [
+            {
+              "run": "echo outOfWorkspace > /home/guineapig/file"
+            },
+            {
+              "uses": "actions/create-archive@v1",
+              "with": {
+                  "path": "archive.tar",
+                  "patterns": [
+                    "/home/guineapig/file"
+              ]
+              }
+            },
+            {
+                    "uses": "actions/get-file@v1",
+                    "with": {
+                      "path": "archive.tar"
+                    }
+            }
+            ]
+        }
+    }
+}
